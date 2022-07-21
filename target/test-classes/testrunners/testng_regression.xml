@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Yokert Test Suite" verbose="4" thread-count="4"
+	parallel="tests">
+	<listeners>
+		<listener
+			class-name="qa.yocket.listeners.TestAllureListener" />
+	</listeners>
+
+	<test name="HomePage Test - Edge">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="qa.yocket.tests.HomePageTest" />
+		</classes>
+	</test>
+	
+	<test name="ExperienceCountPage Test - chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="qa.yocket.tests.ExperienceCountPageTest" />
+		</classes>
+	</test>
+	<!-- 
+	<test name="ExperienceCountPage Test - chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			
+			<class name="qa.yocket.tests.DreamEducationTest" />
+		</classes>
+	</test>
+	<test name="TestScoresPage Test - chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="qa.yocket.tests.TestScoresPageTest" />
+		</classes>
+	</test>
+	<test name="Undergrad Test - chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="qa.yocket.tests.UndergradTest" />
+		</classes>
+	</test>
+	<test name="UniversitiesPage Test - chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="qa.yocket.tests.UniversitiesPageTest" />
+		</classes>
+	</test>
+	<test name="UniversityCollegeFinder Test - chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="qa.yocket.tests.UniversityCollegeFinderTest" />
+		</classes>
+	</test>
+-->
+</suite>

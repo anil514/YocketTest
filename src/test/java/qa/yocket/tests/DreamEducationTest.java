@@ -9,6 +9,7 @@ import qa.yocket.utils.Constants;
 public class DreamEducationTest extends BaseTest{
 	
 	@BeforeClass
+	
 	public void accPageSetup() {
 		Assert.assertTrue(homePage.isCollegeFinderLinkExist());
 		universityCollegeFinderPage = homePage.clickOnCollegeFinderLink();

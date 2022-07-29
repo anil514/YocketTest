@@ -58,6 +58,7 @@ public class TestAllureListener extends DriverFactory implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult iTestResult) {
 		System.out.println("I am in on Test Success method....+ " + getTestMethodName(iTestResult) + " succeed");
+		
 	}
 
 	@Override

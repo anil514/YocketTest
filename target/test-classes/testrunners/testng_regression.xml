@@ -8,20 +8,19 @@
 			class-name="qa.yocket.listeners.TestAllureListener" />
 	</listeners>
 
-	<test name="HomePage Test - Edge">
-		<parameter name="browser" value="edge" />
+	<test name="HomePage Test - Chrome">
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="qa.yocket.tests.HomePageTest" />
 		</classes>
 	</test>
-	
-	<test name="ExperienceCountPage Test - chrome">
+	<!-- 
+		<test name="ExperienceCountPage Test - chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="qa.yocket.tests.ExperienceCountPageTest" />
 		</classes>
 	</test>
-	<!-- 
 	<test name="ExperienceCountPage Test - chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
